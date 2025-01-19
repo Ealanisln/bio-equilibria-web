@@ -1,70 +1,15 @@
-"use client";
-
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Leaf, Star, Menu, X, ArrowRight, Check } from 'lucide-react'
-import Link from "next/link"
-import { useState } from 'react'
+import { Navbar } from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Leaf, Star, ArrowRight, Check } from "lucide-react";
+import Link from "next/link";
 
 export default function LandingPage() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-green-50 to-white">
-      <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-green-100">
-        <div className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
-          <Link className="flex items-center justify-center group" href="#">
-            <Leaf className="h-7 w-7 text-green-600 transform group-hover:rotate-12 transition-transform" />
-            <span className="ml-2 text-2xl font-bold bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
-              Vida y Salud
-            </span>
-          </Link>
-          
-          {/* Mobile menu button */}
-          <button 
-            className="lg:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-
-          {/* Desktop navigation */}
-          <nav className="hidden lg:flex gap-8">
-            {["Servicios", "Testimonios", "Contacto"].map((item) => (
-              <Link
-                key={item}
-                className="text-sm font-medium text-gray-600 hover:text-green-600 hover:underline decoration-green-600 underline-offset-8 transition-colors"
-                href={`#${item.toLowerCase()}`}
-              >
-                {item}
-              </Link>
-            ))}
-            <Button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800">
-              Agendar Consulta
-            </Button>
-          </nav>
-        </div>
-
-        {/* Mobile navigation */}
-        <nav className={`lg:hidden absolute w-full bg-white border-b transform transition-transform duration-300 ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}>
-          <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
-            {["Servicios", "Testimonios", "Contacto"].map((item) => (
-              <Link
-                key={item}
-                className="text-sm font-medium text-gray-600 hover:text-green-600 py-2"
-                href={`#${item.toLowerCase()}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item}
-              </Link>
-            ))}
-            <Button className="bg-gradient-to-r from-green-600 to-green-700 w-full">
-              Agendar Consulta
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
 
       <main className="flex-1 pt-16">
         {/* Hero Section */}
@@ -80,7 +25,8 @@ export default function LandingPage() {
                   </span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-600 text-lg md:text-xl">
-                  Encuentra el equilibrio perfecto entre cuerpo y mente con nuestros tratamientos homeopáticos personalizados.
+                  Encuentra el equilibrio perfecto entre cuerpo y mente con
+                  nuestros tratamientos homeopáticos personalizados.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -103,29 +49,45 @@ export default function LandingPage() {
                 Nuestros Servicios
               </h2>
               <p className="text-gray-600 max-w-[600px]">
-                Ofrecemos una gama completa de tratamientos homeopáticos adaptados a tus necesidades específicas.
+                Ofrecemos una gama completa de tratamientos homeopáticos
+                adaptados a tus necesidades específicas.
               </p>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
                   title: "Consulta Homeopática",
-                  description: "Evaluación integral y tratamiento personalizado basado en tus necesidades únicas.",
-                  features: ["Evaluación completa", "Plan personalizado", "Seguimiento continuo"]
+                  description:
+                    "Evaluación integral y tratamiento personalizado basado en tus necesidades únicas.",
+                  features: [
+                    "Evaluación completa",
+                    "Plan personalizado",
+                    "Seguimiento continuo",
+                  ],
                 },
                 {
                   title: "Terapias Naturales",
-                  description: "Combinamos la homeopatía con otras terapias naturales para potenciar tu bienestar.",
-                  features: ["Fitoterapia", "Aromaterapia", "Medicina tradicional"]
+                  description:
+                    "Combinamos la homeopatía con otras terapias naturales para potenciar tu bienestar.",
+                  features: [
+                    "Fitoterapia",
+                    "Aromaterapia",
+                    "Medicina tradicional",
+                  ],
                 },
                 {
                   title: "Seguimiento Personalizado",
-                  description: "Acompañamiento continuo en tu proceso de sanación y recuperación.",
-                  features: ["Consultas regulares", "Ajustes de tratamiento", "Soporte constante"]
+                  description:
+                    "Acompañamiento continuo en tu proceso de sanación y recuperación.",
+                  features: [
+                    "Consultas regulares",
+                    "Ajustes de tratamiento",
+                    "Soporte constante",
+                  ],
                 },
               ].map((service, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="flex flex-col p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-green-100"
                 >
                   <div className="mb-4 p-3 bg-green-100 rounded-xl w-fit">
@@ -135,7 +97,10 @@ export default function LandingPage() {
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <ul className="space-y-2 mt-auto">
                     {service.features.map((feature, i) => (
-                      <li key={i} className="flex items-center text-sm text-gray-600">
+                      <li
+                        key={i}
+                        className="flex items-center text-sm text-gray-600"
+                      >
                         <Check className="h-4 w-4 text-green-600 mr-2" />
                         {feature}
                       </li>
@@ -148,14 +113,18 @@ export default function LandingPage() {
         </section>
 
         {/* Testimonials Section */}
-        <section id="testimonios" className="w-full py-20 bg-gradient-to-b from-green-50 to-white">
+        <section
+          id="testimonios"
+          className="w-full py-20 bg-gradient-to-b from-green-50 to-white"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
                 Historias de Éxito
               </h2>
               <p className="text-gray-600 max-w-[600px]">
-                Descubre cómo hemos ayudado a otros a recuperar su bienestar natural.
+                Descubre cómo hemos ayudado a otros a recuperar su bienestar
+                natural.
               </p>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -176,16 +145,21 @@ export default function LandingPage() {
                   text: "Gracias a HomeoVida, mi hijo superó sus alergias sin efectos secundarios. ¡Totalmente recomendado!",
                 },
               ].map((testimonial, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
                 >
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
+                      <Star
+                        key={i}
+                        className="h-5 w-5 text-yellow-400 fill-yellow-400"
+                      />
                     ))}
                   </div>
-                  <p className="text-gray-600 mb-6 italic">`{testimonial.text}`</p>
+                  <p className="text-gray-600 mb-6 italic">
+                    `{testimonial.text}`
+                  </p>
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
                     <p className="text-sm text-gray-500">{testimonial.role}</p>
@@ -205,7 +179,8 @@ export default function LandingPage() {
                   ¿Listo para comenzar tu viaje hacia el bienestar?
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar un estado óptimo de salud de manera natural.
+                  Contáctanos hoy mismo y descubre cómo podemos ayudarte a
+                  alcanzar un estado óptimo de salud de manera natural.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -222,22 +197,22 @@ export default function LandingPage() {
               </div>
               <div className="flex-1">
                 <form className="space-y-4 bg-white p-8 rounded-2xl shadow-lg">
-                  <Input 
-                    placeholder="Nombre completo" 
+                  <Input
+                    placeholder="Nombre completo"
                     className="border-gray-200 focus:border-green-500 focus:ring-green-500"
                   />
-                  <Input 
-                    type="email" 
-                    placeholder="Email" 
+                  <Input
+                    type="email"
+                    placeholder="Email"
                     className="border-gray-200 focus:border-green-500 focus:ring-green-500"
                   />
-                  <Input 
-                    type="tel" 
-                    placeholder="Teléfono" 
+                  <Input
+                    type="tel"
+                    placeholder="Teléfono"
                     className="border-gray-200 focus:border-green-500 focus:ring-green-500"
                   />
-                  <Textarea 
-                    placeholder="Mensaje" 
+                  <Textarea
+                    placeholder="Mensaje"
                     className="min-h-[120px] border-gray-200 focus:border-green-500 focus:ring-green-500"
                   />
                   <Button className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800">
@@ -263,10 +238,16 @@ export default function LandingPage() {
               © 2024 HomeoVida. Todos los derechos reservados.
             </p>
             <nav className="flex gap-6">
-              <Link className="text-sm text-gray-600 hover:text-green-600" href="#">
+              <Link
+                className="text-sm text-gray-600 hover:text-green-600"
+                href="#"
+              >
                 Términos
               </Link>
-              <Link className="text-sm text-gray-600 hover:text-green-600" href="#">
+              <Link
+                className="text-sm text-gray-600 hover:text-green-600"
+                href="#"
+              >
                 Privacidad
               </Link>
             </nav>
@@ -274,5 +255,5 @@ export default function LandingPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
