@@ -94,10 +94,12 @@ export function Navbar() {
                 {item.name}
               </Link>
             ))}
+            <Link href="/contacto">
 
             <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 ml-4">
               Agendar Consulta
             </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -155,8 +157,8 @@ export function Navbar() {
                     </p>
                     <div className="space-y-2 text-sm text-slate-600">
                       <p>León, Guanajuato, México</p>
-                      <p>contacto@bioequilibria.mx</p>
-                      <p>+52 (477) 123-4567</p>
+                      <p>contacto@bioequilibria.com</p>
+                      <p>+52 (477) 2020-863</p>
                     </div>
 
                     <div className="flex space-x-4 mt-6">

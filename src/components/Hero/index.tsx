@@ -42,14 +42,14 @@ const HeroSection: FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center lg:justify-start">
               <Link
-                href="/consulta"
+                href="/contacto"
                 className="inline-flex items-center justify-center text-center px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Agendar Consulta
               </Link>
 
               <Link
-                href="#servicios"
+                href="/servicios"
                 className="inline-flex items-center justify-center text-center px-8 py-3 bg-white text-blue-600 border-2 border-blue-200 hover:border-blue-300 font-medium rounded-full hover:bg-blue-50 transition-all duration-300"
               >
                 Nuestros Servicios

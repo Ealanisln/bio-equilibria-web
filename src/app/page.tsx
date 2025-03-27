@@ -102,10 +102,12 @@ export default function LandingPage() {
             </div>
 
             <div className="mt-12 text-center">
-              <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full py-6 px-8">
-                <span>Ver todos nuestros servicios</span>
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link href="/servicios">
+                <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full py-6 px-8">
+                  <span>Ver todos nuestros servicios</span>
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -164,7 +166,7 @@ export default function LandingPage() {
                     ))}
                   </div>
                   <p className="text-slate-600 mb-8 text-lg">
-                  &quot;{testimonial.text}&quot;
+                    &quot;{testimonial.text}&quot;
                   </p>
                   <div className="flex items-center mt-auto">
                     <div className="w-12 h-12 bg-blue-100 rounded-full overflow-hidden mr-4 flex-shrink-0">
@@ -240,7 +242,7 @@ export default function LandingPage() {
                     <div>
                       <p className="font-medium text-blue-900 mb-1">Email</p>
                       <p className="text-slate-600">
-                        contacto@bioequilibria.mx
+                        contacto@bioequilibria.com
                       </p>
                     </div>
                   </div>
@@ -263,7 +265,7 @@ export default function LandingPage() {
                     </div>
                     <div>
                       <p className="font-medium text-blue-900 mb-1">Teléfono</p>
-                      <p className="text-slate-600">+52 (477) 123-4567</p>
+                      <p className="text-slate-600">+52 (477) 2020-863</p>
                     </div>
                   </div>
                 </div>
@@ -393,9 +395,11 @@ export default function LandingPage() {
                 </p>
               </div>
               <div>
-                <Button className="bg-white text-blue-700 hover:bg-blue-50 rounded-full py-6 px-8 shadow-lg hover:shadow-xl transition-all duration-300">
-                  Agendar Consulta Ahora
-                </Button>
+                <Link href="/contacto">
+                  <Button className="bg-white text-blue-700 hover:bg-blue-50 rounded-full py-6 px-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                    Agendar Consulta Ahora
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

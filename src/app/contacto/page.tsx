@@ -109,8 +109,8 @@ export default function ContactoPage() {
                         <h3 className="font-medium text-blue-900 mb-1">
                           Email
                         </h3>
-                        <p className="text-slate-600">info@bioequilibria.mx</p>
-                        <p className="text-slate-600">citas@bioequilibria.mx</p>
+                        <p className="text-slate-600">info@bioequilibria.com</p>
+                        <p className="text-slate-600">citas@bioequilibria.com</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -124,8 +124,7 @@ export default function ContactoPage() {
                         <h3 className="font-medium text-blue-900 mb-1">
                           Teléfono
                         </h3>
-                        <p className="text-slate-600">+52 (477) 123-4567</p>
-                        <p className="text-slate-600">+52 (477) 765-4321</p>
+                        <p className="text-slate-600">+52 (477) 2020-863</p>
                       </div>
                     </CardContent>
                   </Card>
