@@ -44,18 +44,18 @@ export default function ContactoPage() {
             <div className="max-w-3xl mx-auto text-center mb-12">
               <div className="inline-flex items-center justify-center px-4 py-1.5 mb-3 text-xs font-medium text-blue-700 bg-blue-100 rounded-full">
                 <MessageSquare className="w-3.5 h-3.5 mr-1.5" />
-                <span>Contáctanos</span>
+                <span>Contáctame</span>
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-blue-900 mb-6">
-                Estamos Aquí Para
+                Estoy Aquí Para
                 <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
                   {" "}
                   Ayudarte
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-slate-600">
-                Ponte en contacto con nosotros para resolver tus dudas o agendar
-                una consulta. Nuestro equipo está listo para brindarte la
+                Ponte en contacto conmigo para resolver tus dudas o agendar
+                una consulta. Estoy listo/a para brindarte la
                 atención personalizada que mereces.
               </p>
             </div>
@@ -199,10 +199,10 @@ export default function ContactoPage() {
                     <Card className="border-blue-100">
                       <CardContent className="p-6">
                         <h2 className="text-2xl font-bold text-blue-900 mb-2">
-                          Envíanos un Mensaje
+                          Envíame un Mensaje
                         </h2>
                         <p className="text-slate-600 mb-6">
-                          Completa el formulario y te responderemos a la
+                          Completa el formulario y te responderé a la
                           brevedad.
                         </p>
 
@@ -247,7 +247,7 @@ export default function ContactoPage() {
                             </label>
                             <Input
                               id="asunto"
-                              placeholder="¿Sobre qué nos quieres contactar?"
+                              placeholder="¿Sobre qué me quieres contactar?"
                               className="w-full rounded-xl border-slate-200 focus:border-blue-500 focus:ring-blue-500"
                             />
                           </div>
@@ -261,7 +261,7 @@ export default function ContactoPage() {
                             </label>
                             <Textarea
                               id="mensaje"
-                              placeholder="¿Cómo podemos ayudarte?"
+                              placeholder="¿Cómo puedo ayudarte?"
                               className="min-h-[150px] w-full rounded-xl border-slate-200 focus:border-blue-500 focus:ring-blue-500"
                             />
                           </div>
@@ -271,7 +271,7 @@ export default function ContactoPage() {
                           </Button>
 
                           <p className="text-xs text-slate-500 text-center">
-                            Al enviar este formulario, aceptas nuestra{" "}
+                            Al enviar este formulario, aceptas mi{" "}
                             <Link
                               href="/privacidad"
                               className="text-blue-600 hover:underline"
@@ -293,8 +293,8 @@ export default function ContactoPage() {
                           Solicitar una Cita
                         </h2>
                         <p className="text-slate-600 mb-6">
-                          Completa el formulario para agendar una consulta con
-                          nuestros especialistas.
+                          Completa el formulario para agendar una consulta
+                          conmigo.
                         </p>
 
                         <form className="space-y-6">
@@ -442,8 +442,8 @@ export default function ContactoPage() {
                           Servicios Corporativos
                         </h2>
                         <p className="text-slate-600 mb-6">
-                          ¿Buscas soluciones de bienestar para tu empresa?
-                          Completa el formulario y te contactaremos para diseñar
+                          ¿Buscas soluciones de bienestar para tu empresa? (Considera si esta sección sigue aplicando)
+                          Completa el formulario y te contactaré para diseñar
                           un programa a medida.
                         </p>
 
@@ -581,7 +581,7 @@ export default function ContactoPage() {
                             </label>
                             <Textarea
                               id="mensaje-corp"
-                              placeholder="Cuéntanos más sobre las necesidades de tu empresa"
+                              placeholder="Cuéntame más sobre las necesidades de tu empresa"
                               className="min-h-[150px] w-full rounded-xl border-slate-200 focus:border-blue-500 focus:ring-blue-500"
                             />
                           </div>
@@ -591,7 +591,7 @@ export default function ContactoPage() {
                           </Button>
 
                           <p className="text-xs text-slate-500 text-center">
-                            Nos pondremos en contacto contigo en un plazo máximo
+                            Me pondré en contacto contigo en un plazo máximo
                             de 48 horas hábiles.
                           </p>
                         </form>
@@ -609,10 +609,10 @@ export default function ContactoPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-3xl font-bold text-blue-900 mb-4">
-                Síguenos en Redes Sociales
+                Sígueme en Redes Sociales
               </h2>
               <p className="text-lg text-slate-600">
-                Mantente al día con nuestros consejos de salud, eventos y
+                Mantente al día con mis consejos de salud, eventos y
                 promociones especiales.
               </p>
             </div>
@@ -710,7 +710,7 @@ export default function ContactoPage() {
                     Suscríbete a Nuestro Newsletter
                   </h2>
                   <p className="text-blue-100 mb-6">
-                    Recibe consejos de salud, promociones exclusivas y las
+                    Recibe mis consejos de salud, promociones exclusivas y las
                     últimas novedades directamente en tu correo.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">

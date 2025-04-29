@@ -41,7 +41,7 @@ export default function ServiciosPage() {
             <div className="max-w-3xl mx-auto text-center mb-8 md:mb-16">
               <div className="inline-flex items-center justify-center px-4 py-1.5 mb-3 text-xs font-medium text-blue-700 bg-blue-100 rounded-full">
                 <Droplet className="w-3.5 h-3.5 mr-1.5" />
-                <span>Nuestros Servicios</span>
+                <span>Mis Servicios</span>
               </div>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-blue-900 mb-4 md:mb-6">
                 Tratamientos Homeopáticos
@@ -51,7 +51,7 @@ export default function ServiciosPage() {
                 </span>
               </h1>
               <p className="text-base md:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
-                Descubre nuestra gama completa de servicios diseñados para
+                Descubre mi gama completa de servicios diseñados para
                 ayudarte a restaurar el equilibrio natural de tu cuerpo y
                 alcanzar un estado óptimo de bienestar.
               </p>
@@ -117,14 +117,14 @@ export default function ServiciosPage() {
             <div className="max-w-3xl mx-auto text-center mb-8 md:mb-16">
               <div className="inline-flex items-center justify-center px-4 py-1.5 mb-3 text-xs font-medium text-blue-700 bg-blue-100 rounded-full">
                 <Trophy className="w-3.5 h-3.5 mr-1.5" />
-                <span>Nuestro Enfoque</span>
+                <span>Mi Enfoque</span>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-blue-900">
-                Cómo Trabajamos
+                Cómo Trabajo
               </h2>
               <p className="text-base md:text-lg text-slate-600">
-                En Bio Equilibria seguimos un proceso meticuloso para asegurar
-                que cada paciente reciba el tratamiento más adecuado para sus
+                Sigo un proceso meticuloso para asegurar que cada paciente reciba
+                el tratamiento más adecuado para sus
                 necesidades específicas.
               </p>
             </div>
@@ -256,7 +256,7 @@ export default function ServiciosPage() {
                       Consulta Homeopática Integral
                     </h3>
                     <p className="text-sm md:text-base text-slate-600 mb-4 md:mb-6">
-                      Nuestra consulta homeopática es una evaluación exhaustiva
+                      Mi consulta homeopática es una evaluación exhaustiva
                       que examina todos los aspectos de tu salud física,
                       emocional y mental para identificar las causas
                       fundamentales de tus problemas de salud y desarrollar un
@@ -332,10 +332,10 @@ export default function ServiciosPage() {
                 <span>Preguntas Frecuentes</span>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-blue-900">
-                Resolvemos Tus Dudas
+                Resuelvo Tus Dudas
               </h2>
               <p className="text-base md:text-lg text-slate-600">
-                Encuentra respuestas a las preguntas más comunes sobre nuestros
+                Encuentra respuestas a las preguntas más comunes sobre mis
                 servicios y la medicina homeopática en general.
               </p>
             </div>
@@ -391,7 +391,7 @@ export default function ServiciosPage() {
                   href="/contacto"
                   className="inline-flex items-center justify-center text-sm md:text-base text-blue-600 font-medium hover:text-blue-800 transition-colors"
                 >
-                  <span>¿Tienes más preguntas? Contáctanos</span>
+                  <span>¿Tienes más preguntas? Contáctame</span>
                   <ArrowRight className="ml-2 h-3 w-3 md:h-4 md:w-4" />
                 </Link>
               </div>

@@ -23,13 +23,13 @@ export default function LandingPage() {
             <div className="flex flex-col items-center text-center mb-16">
               <div className="inline-flex items-center justify-center px-4 py-1.5 mb-3 text-xs font-medium text-blue-700 bg-blue-100 rounded-full">
                 <Droplet className="w-3.5 h-3.5 mr-1.5" />
-                <span>Nuestros Servicios</span>
+                <span>Mis Servicios</span>
               </div>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4 text-blue-900">
                 Tratamientos Homeopáticos Personalizados
               </h2>
               <p className="text-slate-600 max-w-[700px] text-lg">
-                Ofrecemos una gama completa de tratamientos adaptados a tus
+                Ofrezco una gama completa de tratamientos adaptados a tus
                 necesidades específicas, basados en los principios de la
                 medicina natural.
               </p>
@@ -104,7 +104,7 @@ export default function LandingPage() {
             <div className="mt-12 text-center">
               <Link href="/servicios">
                 <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full py-6 px-8">
-                  <span>Ver todos nuestros servicios</span>
+                  <span>Ver todos mis servicios</span>
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
@@ -127,7 +127,7 @@ export default function LandingPage() {
                 Historias de Éxito
               </h2>
               <p className="text-slate-600 max-w-[700px] text-lg">
-                Descubre cómo hemos ayudado a otros a recuperar su bienestar
+                Descubre cómo he ayudado a otros a recuperar su bienestar
                 natural y alcanzar un equilibrio en su vida.
               </p>
             </div>
@@ -199,13 +199,13 @@ export default function LandingPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div className="flex flex-col justify-center">
                 <div className="inline-flex items-center justify-center px-4 py-1.5 mb-3 text-xs font-medium text-blue-700 bg-blue-100 rounded-full max-w-fit">
-                  <span>Contáctanos</span>
+                  <span>Contáctame</span>
                 </div>
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6 text-blue-900">
                   ¿Listo para tu viaje hacia el bienestar natural?
                 </h2>
                 <p className="text-slate-600 mb-8 text-lg">
-                  Contáctanos hoy mismo y descubre cómo podemos ayudarte a
+                  Contáctame hoy mismo y descubre cómo puedo ayudarte a
                   alcanzar un estado óptimo de salud de manera natural y
                   personalizada.
                 </p>
@@ -355,7 +355,7 @@ export default function LandingPage() {
                         Mensaje
                       </span>
                       <Textarea
-                        placeholder="¿Cómo podemos ayudarte?"
+                        placeholder="¿Cómo puedo ayudarte?"
                         className="min-h-[150px] w-full rounded-xl border-slate-200 focus:border-blue-500 focus:ring-blue-500"
                       />
                     </label>
@@ -366,7 +366,7 @@ export default function LandingPage() {
                   </Button>
 
                   <p className="text-xs text-slate-500 text-center mt-4">
-                    Al enviar este formulario, aceptas nuestra{" "}
+                    Al enviar este formulario, aceptas mi{" "}
                     <Link
                       href="/privacidad"
                       className="text-blue-600 hover:underline"

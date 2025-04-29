@@ -22,7 +22,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { name: "Inicio", href: "/" },
   { name: "Servicios", href: "/servicios" },
-  { name: "Sobre Nosotros", href: "/sobre-nosotros" },
+  { name: "Sobre mí", href: "/sobre-mi" },
   { name: "Testimonios", href: "/#testimonios" },
   { name: "Contacto", href: "/contacto" },
 ];
